@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+canvas {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
