@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import * as THREE from "three";
 import { extend, useFrame } from "@react-three/fiber";
 import { shaderMaterial } from "@react-three/drei";
+import { useMediaQuery } from "react-responsive";
 
 const AnimatedCheckerboardMaterial = shaderMaterial(
   {
@@ -46,13 +47,14 @@ const AnimatedCheckerboardMaterial = shaderMaterial(
 extend({ AnimatedCheckerboardMaterial });
 
 export const CheckerGround = ({ isRunning }) => {
+  const isMobile = useMediaQuery({ query: "(max-width: 600px)" });
   const materialRef = useRef();
   const [animationTime, setAnimationTime] = useState(0);
 
   useFrame((_, delta) => {
     if (materialRef.current) {
       if (isRunning) {
-        setAnimationTime((prevTime) => prevTime + delta * 15);
+        setAnimationTime((prevTime) => prevTime + delta * (isMobile ? 25 : 15));
       }
       materialRef.current.uTime = animationTime;
     }
@@ -60,7 +62,10 @@ export const CheckerGround = ({ isRunning }) => {
   return (
     <mesh rotation={[4.725, 0, 0]} position={[0, -0.5, 0]}>
       <planeGeometry args={[10, 10, 10, 10]} />
-      <animatedCheckerboardMaterial ref={materialRef} />
+      <animatedCheckerboardMaterial
+        uScale={isMobile ? [5, 10] : [40, 20]}
+        ref={materialRef}
+      />
     </mesh>
   );
 };
