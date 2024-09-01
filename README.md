@@ -1,8 +1,23 @@
-# React + Vite
+# PS1-inspired Jitter Shader demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Jitter Shader Demo image](public/thumbnail.png)
 
-Currently, two official plugins are available:
+### This project demonstrates a custom Jitter Shader inspired by the visual style of PS1-era games. The shader replicates the nostalgic 'jitter' effect, adding a retro aesthetic to 3D models. Perfect for developers looking to incorporate a classic, low-poly look into their modern projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+
+https://jitter-demo.otfnk.com
+
+## Installation
+
+- Install with `npm run install`
+- Run the demo with `npm run dev`
+- Build it with `npm run build`
+
+## Credits
+
+- Crash Bandicoot Low Poly model from [Sketchfab](https://sketchfab.com/3d-models/crash-bandicoot-1b03d855ede0483f8fa98ce0fdf7f62b) by [smitty462\_](https://sketchfab.com/smitty462_)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
