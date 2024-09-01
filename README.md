@@ -2,7 +2,7 @@
 
 ![Jitter Shader Demo image](public/thumbnail.png)
 
-### This project demonstrates a custom Jitter Shader inspired by the visual style of PS1-era games. The shader replicates the nostalgic 'jitter' effect, adding a retro aesthetic to 3D models. Perfect for developers looking to incorporate a classic, low-poly look into their modern projects.
+### This project demonstrates a custom Jitter Shader inspired by the visual style of PS1-era games. The shader replicates the nostalgic 'jitter' effect, adding a retro aesthetic to 3D models. Perfect for developers looking to add a retro feel to low poly projects.
 
 ## Demo
 
