@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Center } from "@react-three/drei";
 import { Leva } from "leva";
+
 import { Crash } from "./models/Crash";
 import { Fog } from "./models/FogEffect";
 

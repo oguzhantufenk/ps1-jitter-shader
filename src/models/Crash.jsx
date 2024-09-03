@@ -2,10 +2,9 @@ import { useRef, useEffect, useMemo, useState } from "react";
 import * as THREE from "three";
 import { useGLTF, useAnimations, useTexture } from "@react-three/drei";
 import { useControls } from "leva";
-
-// Hook
-import useClickToToggle from "../hooks/useClickToToggle";
 import { CheckerGround } from "./CheckerGround";
+
+import useClickToToggle from "../hooks/useClickToToggle";
 
 const createCustomMaterial = (color, jitterLevel, texture) => {
   return new THREE.MeshStandardMaterial({
