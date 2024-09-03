@@ -157,5 +157,3 @@ export function Crash({ ...props }) {
     </>
   );
 }
-
-useGLTF.preload("/sonic-scene.glb");

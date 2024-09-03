@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import { extend } from "@react-three/fiber";
 import { shaderMaterial } from "@react-three/drei";
 import * as THREE from "three";
@@ -33,12 +32,10 @@ const FogMaterial = shaderMaterial(
 extend({ FogMaterial });
 
 export function Fog() {
-  const fogRef = useRef();
-
   return (
     <mesh rotation={[4.725, 0, 0]} position={[0, -0.49, 0]}>
       <planeGeometry args={[50, 50, 50, 50]} />
-      <fogMaterial ref={fogRef} transparent depthWrite={false} />
+      <fogMaterial transparent depthWrite={false} />
     </mesh>
   );
 }
