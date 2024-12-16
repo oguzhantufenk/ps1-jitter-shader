@@ -12,7 +12,7 @@ https://jitter-demo.otfnk.com
 
 ## Installation
 
-- Install with `npm run install`
+- Install with `npm install`
 - Run the demo with `npm run dev`
 - Build it with `npm run build`
 
